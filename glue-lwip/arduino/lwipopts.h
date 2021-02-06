@@ -1243,7 +1243,7 @@
  * will be TCP_WND >> TCP_RCV_SCALE
  */
 #if !defined TCP_WND || defined __DOXYGEN__
-#define TCP_WND                         (4 * TCP_MSS)
+#define TCP_WND                         (8 * TCP_MSS)
 #endif
 
 /**
