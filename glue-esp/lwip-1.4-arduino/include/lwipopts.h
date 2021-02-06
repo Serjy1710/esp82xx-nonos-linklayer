@@ -915,7 +915,7 @@
  * (2 * TCP_MSS) for things to work well
  */
 #ifndef TCP_WND
-#define TCP_WND                         (*(volatile uint32*)0x600011F0)
+#define TCP_WND                         (8 * TCP_MSS)
 #endif
 
 /**
@@ -963,7 +963,7 @@
  * an upper limit on the MSS advertised by the remote host.
  */
 #ifndef TCP_MSS
-#define TCP_MSS                         1460
+#define TCP_MSS                         1440
 #endif
 #endif
 
